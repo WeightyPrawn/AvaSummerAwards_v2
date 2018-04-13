@@ -1,0 +1,59 @@
+﻿body {
+    background: lightgrey;
+}
+
+nav {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+main {
+    margin: 0 auto;
+    margin-top: -20px;
+    padding-top: 20px;
+    background: white;
+    max-width: 845px;
+}
+
+.main-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.panel-body {
+    padding: 0;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+h4.panel-title {
+    padding-right: 15px;
+    padding-left: 0;
+}
+
+@media (min-width: 768px) {
+    h4.panel-title {
+        padding-left: 15px;
+    }
+}
+
+.img-circle {
+    max-width: 100px;
+}
+
+button.btn-danger {
+    max-width: 34px;
+}

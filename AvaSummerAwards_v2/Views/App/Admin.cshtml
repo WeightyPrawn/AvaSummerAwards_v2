@@ -1,0 +1,101 @@
+﻿@{
+    Layout = null;
+}
+
+<div class="main-content">
+    <div class="panel-group" id="category-{{$index}}" role="tablist" aria-multiselectable="true"
+         ng-repeat="category in data.categories">
+        <div class="panel panel-default container-fluid">
+            <div class="panel-heading row vertical-align" role="tab" id="heading-{{$index}}">
+                <a class="col-xs-12" role="button" data-toggle="collapse"
+                   data-parent="#nominee-{{$index}}" data-target="#collapse-{{$index}}" aria-expanded="false"
+                   aria-controls="collapse-{{$index}}" ng-class="{collapsed: $index != 0}">
+                    <h2>{{category.name}}</h2>
+                </a>
+                <button class="col-xs-3 col-sm-2 btn btn-default" ng-click="vote(nominee)">
+                    Edit
+                </button>
+                <button class="col-xs-3 col-sm-2 btn btn-default btn-danger" ng-click="vote(nominee)">
+                    X
+                </button>
+            </div>
+            <div id="collapse-{{$index}}" class="panel-collapse collapse" role="tabpanel"
+                 aria-labelledby="heading-{{index}}" ng-class="{in: $index == 0}">
+                <div class="panel-body">
+                    <p>{{category.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+<div ng-app="AvaSummerAwards" ng-cloak>
+    <div class="container" ng-controller="MainController as ctrl">
+        <h1>Avanade Summer Awards!</h1>
+
+        <div>
+            <hr />
+            <h2>Kategorier</h2>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <td><strong>Titel</strong></td>
+                        <td><strong>Beskrivning</strong></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="category in ctrl.data.categories">
+                        <td>{{category.Name}}</td>
+                        <td>{{category.Description}}</td>
+                        <td><button class="btn btn-default btn-small" disabled>Nominera</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div>
+            <hr />
+            <h2>Nominering</h2>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <td><strong>Kategori</strong></td>
+                        <td><strong>Nomineringar</strong></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="category in ctrl.data.categories">
+                        <td>{{category.Name}}</td>
+                        <td>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <td>Nominerad</td>
+                                        <td>Motivering</td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="nominee in category.Nominees">
+                                        <td>{{nominee.NomineeName}}</td>
+                                        <td><span ng-repeat="nomination in nominee.Nominations">{{nomination.Reason}}</span></td>
+                                        <td class="pull-right">
+                                            <button class="btn btn-small btn-success" data-ng-click="ctrl.vote(nominee)" data-ng-hide="category.HasVoted">Rösta</button>
+                                            <button class="btn btn-small btn-danger" data-ng-click="ctrl.removeVote(nominee)" data-ng-show="nominee.Vote !== null">Ta bort röst</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+-->
