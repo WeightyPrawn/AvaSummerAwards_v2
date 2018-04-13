@@ -1,2 +1,63 @@
-﻿<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Add</button>
+﻿@using Awards.ViewModels
+@model MyNominationsViewModel
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Add</button>
+<div class="main-content">
+    @foreach (var category in Model.Categories.Select((value, i) => new { i, value }))
+    {
+        <div class="panel-group" id="category-@category.i" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default container-fluid">
+                <div class="panel-heading row vertical-align" role="tab" id="heading-@category.i">
+                    <a class="collapsed col-xs-12" role="button" data-toggle="collapse"
+                       data-parent="#nominee-@category.i" data-target="#collapse-{@category.i" aria-expanded="false"
+                       aria-controls="collapse-@category.i">
+                        <h2>@category.value.Name</h2>
+                    </a>
+                </div>
+                <div id="collapse-@category.i" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="heading-@category.i">
+                    <div class="panel-body">
+                        <p>@category.value.Description</p>
+                        <p style="color:red;">Click on nominees to read why they were nominated.</p>
+                        @foreach (var nomination in category.value.Nominees.Select((value, i) => new { i, value }))
+                        {
+                            <div class="panel-group" id="nominee-@category.i-@nomination.i" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default container-fluid">
+                                    <div class="panel-heading row vertical-align" role="tab" id="heading-@category.i-@nomination.i">
+                                        <a class="collapsed col-xs-9 col-sm-10" role="button" data-toggle="collapse"
+                                           data-parent="#nominee-@category.i-@nomination.i" data-target="#collapse-@category.i-@nomination.i" aria-expanded="false"
+                                           aria-controls="collapse-@category.i-@nomination.i">
+                                            <div class="row vertical-align">
+                                                <div class="col-sm-4 hidden-xs" style="padding-left:0">
+                                                    <img ng-src="@nomination.value.Image"
+                                                         class="img-responsive img-circle">
+                                                </div>
+                                                <h4 class="panel-title col-xs-12 col-sm-8">
+                                                    @nomination.value.Name
+                                                </h4>
+                                            </div>
+                                        </a>
+                                        <button class="col-xs-3 col-sm-2 btn btn-default" ng-click="vote(nominee)"
+                                                ng-hide="category.userHasVoted">
+                                            Vote
+                                        </button>
+                                        <button class="col-xs-3 col-sm-2 btn btn-danger" ng-click="removeVote(nominee)"
+                                                ng-show="nominee.vote !== null">
+                                            Undo
+                                        </button>
+                                    </div>
+                                    <div id="collapse-@category.i-@nomination.i" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="heading-@category.i-@nomination.i">
+                                        <div class="panel-body">
+                                            <p ng-repeat="nomination in nominee.nominations"><em>"{{nomination.reason}}"</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
 @Html.Partial("_AddNominationPartial.cshtml")

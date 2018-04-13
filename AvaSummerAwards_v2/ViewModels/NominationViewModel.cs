@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Awards.ViewModels
+﻿namespace Awards.ViewModels
 {
     public class NominationViewModel
     {
