@@ -31,6 +31,14 @@ angular.module('AvaSummerAwards', ['ngRoute'])
         $scope.vote = VoteService.vote;
         $scope.removeVote = VoteService.removeVote;
 
+    }]).controller('NominationController', ['NominationService', '$interval', '$scope', '$rootScope', function (NominationService, $interval, $scope, $rootScope) {
+            console.log($rootScope.userInfo)
+            $scope.data = NominationService.data;
+
+            $scope.add = NominationService.add;
+            $scope.update = NominationService.update;
+            $scope.delete = NominationService.delete;
+
     }]).controller('AdminController', ['VoteService', '$interval', '$scope', '$rootScope', function (VoteService, $interval, $scope, $rootScope) {
         console.log($rootScope.userInfo)
         $scope.data = VoteService.data;
@@ -84,6 +92,75 @@ angular.module('AvaSummerAwards', ['ngRoute'])
                 console.log(nominee);
 
                 return $http.delete(apiBaseUrl + URLS.VOTE + "/" + nominee.vote.id)
+                    .then(function successCallback(response) {
+                        // this callback will be called asynchronously
+                        // when the response is available
+                        getData();
+                        return response;
+                    }, function errorCallback(response) {
+                        // called asynchronously if an error occurs
+                        // or server returns response with an error status.
+                    });
+            },
+
+            data: data
+        }
+    }])
+    .factory('NominationService', ['$http', function ($http) {
+        var apiBaseUrl = "";
+        var data = {};
+
+        var URLS = {
+            NOMINATIONS: '/api/Nominations'
+        };
+
+        function init() {
+            getData();
+        };
+        function getData() {
+            $http.get(apiBaseUrl + URLS.NOMINATIONS + "/Get").success(function (resp) {
+                data.categories = resp;
+                console.log(data);
+            }).error(function (error) {
+                console.log(error);
+                alert("Error: " + error);
+            });
+        };
+        init();
+
+        return {
+            add: function (nomination) {
+                console.log(nomination);
+
+                $http.post(apiBaseUrl + URLS.NOMINATIONS + "/Add", nomination)
+                    .then(function successCallback(response) {
+                        // this callback will be called asynchronously
+                        // when the response is available
+                        getData();
+                        return response;
+                    }, function errorCallback(response) {
+                        // called asynchronously if an error occurs
+                        // or server returns response with an error status.
+                    });
+            },
+            update: function (nomination) {
+                console.log(nomination);
+
+                return $http.post(apiBaseUrl + URLS.NOMINATIONS + "/Update", nomination)
+                    .then(function successCallback(response) {
+                        // this callback will be called asynchronously
+                        // when the response is available
+                        getData();
+                        return response;
+                    }, function errorCallback(response) {
+                        // called asynchronously if an error occurs
+                        // or server returns response with an error status.
+                    });
+            },
+            delete: function (nomination) {
+                console.log(nomination);
+
+                return $http.delete(apiBaseUrl + URLS.VOTE + "/Delete" + nomination.id)
                     .then(function successCallback(response) {
                         // this callback will be called asynchronously
                         // when the response is available

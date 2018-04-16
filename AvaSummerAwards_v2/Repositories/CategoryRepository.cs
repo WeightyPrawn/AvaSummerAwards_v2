@@ -53,6 +53,36 @@ namespace Awards.Repositories
             return response;
         }
 
+        public List<CategoryViewModel> GetNominationsForUser(string userName)
+        {
+            var response = _context.Categories
+                .Select(o => new CategoryViewModel()
+                {
+                    ID = o.ID,
+                    Name = o.Name,
+                    Description = o.Description,
+                    Nominees = o.Nominees
+                    .Where(r => r.Nominations.Any(s => s.Nominator == userName))
+                    .Select(p => new NomineeViewModel()
+                    {
+                        ID = p.ID,
+                        CategoryID = p.CategoryID,
+                        Email = p.Email,
+                        Name = p.Name,
+                        Image = p.Image,
+                        Nominations = p.Nominations
+                            .Where(s => s.Nominator == userName)
+                            .Select(r => new NominationViewModel()
+                            {
+                                ID = r.ID,
+                                NomineeID = r.NomineeID,
+                                Reason = r.Reason
+                            }).ToList(),
+                    }).ToList()
+                }).ToList();
+            return response;
+        }
+
         public List<EditCategoryViewModel> GetCategories()
         {
             return _context.Categories

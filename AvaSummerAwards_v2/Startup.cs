@@ -44,6 +44,7 @@ namespace Awards
             services.AddDbContext<AwardsContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<CategoryRepository>();
+            services.AddTransient<NominationRepository>();
             services.AddTransient<VoteRepository>();
         }
 

@@ -149,6 +149,13 @@ hr {
     border-color: #ddd;
 }
 
+button.btn-danger {
+    max-width: 34px;
+}
+
+.hidden {
+    display: none;
+}
 .container {
     width: 100%;
     text-align: center;
