@@ -26,20 +26,13 @@ namespace Awards.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(NewNominationViewModel nomination)
+        public IActionResult Add([FromBody] NewNominationViewModel nomination)
         {
             _nominationRepository.Add(nomination, User.Identity.Name);
             return Ok();
         }
 
-        [HttpPost]
-        public IActionResult Update(NewNominationViewModel nomination)
-        {
-            _nominationRepository.Update(nomination, User.Identity.Name);
-            return Ok();
-        }
-
-        [HttpDelete]
+        [HttpDelete("{nominationId:int}")]
         public IActionResult Delete(int nominationId)
         {
             _nominationRepository.Delete(nominationId, User.Identity.Name);

@@ -18,7 +18,12 @@ namespace Awards.Repositories
 
         public void Add(NewNominationViewModel nomination, string userName)
         {
-            var existingNominee = _context.Nominees.FirstOrDefault(
+            if(nomination.NominationId != null)
+            {
+                Update(nomination, userName);
+                return;
+            }
+            var existingNominee = _context.Nominees.Include("Nominations").FirstOrDefault(
                 o => o.CategoryID == nomination.CategoryID && o.Email == nomination.Email);
             if (existingNominee != null)
             {
@@ -58,7 +63,7 @@ namespace Awards.Repositories
             _context.SaveChanges();
         }
 
-        public void Update(NewNominationViewModel nomination, string userName)
+        private void Update(NewNominationViewModel nomination, string userName)
         {
             var existingNomination = Get(nomination.NominationId.GetValueOrDefault(), userName);
             existingNomination.Reason = nomination.Reason;

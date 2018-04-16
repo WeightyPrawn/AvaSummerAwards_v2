@@ -2,7 +2,7 @@
     Layout = null;
 }
 <div class="panel-body">
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Add</button>
+    <button type="button" class="btn btn-primary btn-lg" ng-click="openModal()">Add</button>
     <div class="main-content">
         <div class="panel-group" id="category-{{$index}}" role="tablist" aria-multiselectable="true"
              ng-repeat="category in data.categories">
@@ -28,18 +28,18 @@
                                        aria-controls="collapse-{{$parent.index}}-{{$index}}">
                                         <div class="row vertical-align">
                                             <div class="col-sm-4 hidden-xs" style="padding-left:0">
-                                                <img src="{{nomination.image}}"
+                                                <img ng-src="{{nominee.image}}"
                                                      class="img-responsive img-circle">
                                             </div>
                                             <h4 class="panel-title col-xs-12 col-sm-8">
-                                                {{nomination.name}}
+                                                {{nominee.name}}
                                             </h4>
                                         </div>
                                     </a>
-                                    <button class="col-xs-3 col-sm-2 btn btn-default">
+                                    <button class="col-xs-3 col-sm-2 btn btn-default" ng-click="openModal(nominee)">
                                         Edit
                                     </button>
-                                    <button class="col-xs-3 col-sm-2 btn btn-danger">
+                                    <button class="col-xs-3 col-sm-2 btn btn-danger" ng-click="delete(nominee.nominations[0].id)">
                                         X
                                     </button>
                                 </div>

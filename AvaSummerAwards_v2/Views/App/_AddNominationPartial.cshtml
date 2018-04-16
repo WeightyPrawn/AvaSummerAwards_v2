@@ -11,33 +11,30 @@
                     <div class="form-group">
                         <label for="category" class="col-sm-2 control-label">Category</label>
                         <div class="col-sm-10">
-                            <select class="form-control" id="categoryId" name="categoryId">
-                                <option value="1">Category 1</option>
-                                <option value="2">Category 2</option>
-                                <option value="3">Category 3</option>
-                                <option value="4">Category 4</option>
+                            <select class="form-control" id="categoryId" name="categoryId" ng-model="editNomination.categoryID"
+                                    ng-options="category.id as category.name for category in data.categories">
+                                <!--<option ng-repeat="category in data.categories" ng-value="category.id">{{category.name}}</option>-->
                             </select>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="nominee" class="col-sm-2 control-label">Nominee</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="email" name="email" placeholder="Name or E-mail">
+                            <input type="text" class="form-control" id="email" name="email" ng-model="editNomination.email" placeholder="Name or E-mail">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="reason" class="col-sm-2 control-label">Motivation</label>
                         <div class="col-sm-10">
-                            <textarea class="form-control" id="reason" name="reason" placeholder="Motivation"></textarea>
+                            <textarea class="form-control" id="reason" name="reason" placeholder="Motivation" ng-model="editNomination.reason"></textarea>
                         </div>
                     </div>
-                    <input type="hidden" id="nominationId" name="nominationId" />
-                    <input type="submit" id="submit-input" class="hidden"/>
+                    <input type="hidden" id="nominationId" name="nominationId" ng-model="editNomination.nominationId" />
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <label class="btn btn-primary" for="submit-input">Submit</label>
+                <button type="button" class="btn btn-primary" ng-click="add(editNomination)">Submit</button>
             </div>
         </div>
     </div>

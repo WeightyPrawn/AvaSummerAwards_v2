@@ -18,6 +18,11 @@ angular.module('AvaSummerAwards', ['ngRoute'])
                     controller: 'AdminController',
                     templateUrl: '/App/Admin',
                 })
+                .when('/nominate',
+                {
+                    controller: 'NominationController',
+                    templateUrl: '/App/Nomination',
+                })
                 .otherwise({ redirectTo: '/' });
             var endpoints = {
                 // Map the location of a request to an API to a the identifier of the associated resource
@@ -36,8 +41,18 @@ angular.module('AvaSummerAwards', ['ngRoute'])
             $scope.data = NominationService.data;
 
             $scope.add = NominationService.add;
-            $scope.update = NominationService.update;
             $scope.delete = NominationService.delete;
+
+            $scope.editNomination = {};
+            $scope.openModal = function (data) {
+                if (data) {
+                    $scope.editNomination.categoryID = data.categoryID;
+                    $scope.editNomination.email = data.email;
+                    $scope.editNomination.reason = data.nominations[0].reason;
+                    $scope.editNomination.nominationId = data.nominations[0].id;
+                }
+                $('#myModal').modal('show')
+            };
 
     }]).controller('AdminController', ['VoteService', '$interval', '$scope', '$rootScope', function (VoteService, $interval, $scope, $rootScope) {
         console.log($rootScope.userInfo)
@@ -118,7 +133,7 @@ angular.module('AvaSummerAwards', ['ngRoute'])
             getData();
         };
         function getData() {
-            $http.get(apiBaseUrl + URLS.NOMINATIONS + "/Get").success(function (resp) {
+            $http.get(apiBaseUrl + URLS.NOMINATIONS).success(function (resp) {
                 data.categories = resp;
                 console.log(data);
             }).error(function (error) {
@@ -132,35 +147,22 @@ angular.module('AvaSummerAwards', ['ngRoute'])
             add: function (nomination) {
                 console.log(nomination);
 
-                $http.post(apiBaseUrl + URLS.NOMINATIONS + "/Add", nomination)
+                $http.post(apiBaseUrl + URLS.NOMINATIONS, nomination)
                     .then(function successCallback(response) {
                         // this callback will be called asynchronously
                         // when the response is available
                         getData();
+                        $('#myModal').modal('hide');
                         return response;
                     }, function errorCallback(response) {
                         // called asynchronously if an error occurs
                         // or server returns response with an error status.
                     });
             },
-            update: function (nomination) {
-                console.log(nomination);
+            delete: function (nominationId) {
+                console.log(nominationId);
 
-                return $http.post(apiBaseUrl + URLS.NOMINATIONS + "/Update", nomination)
-                    .then(function successCallback(response) {
-                        // this callback will be called asynchronously
-                        // when the response is available
-                        getData();
-                        return response;
-                    }, function errorCallback(response) {
-                        // called asynchronously if an error occurs
-                        // or server returns response with an error status.
-                    });
-            },
-            delete: function (nomination) {
-                console.log(nomination);
-
-                return $http.delete(apiBaseUrl + URLS.VOTE + "/Delete" + nomination.id)
+                return $http.delete(apiBaseUrl + URLS.NOMINATIONS + "/" + nominationId)
                     .then(function successCallback(response) {
                         // this callback will be called asynchronously
                         // when the response is available

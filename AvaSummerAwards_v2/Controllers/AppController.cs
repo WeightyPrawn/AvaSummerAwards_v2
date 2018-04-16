@@ -17,5 +17,9 @@ namespace Awards.Controllers
         {
             return View();
         }
+        public IActionResult Nomination()
+        {
+            return View();
+        }
     }
 }
