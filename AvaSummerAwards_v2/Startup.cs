@@ -37,7 +37,9 @@ namespace Awards
             .AddAzureAd(options => Configuration.Bind("AzureAd", options))
             .AddCookie();
 
-            services.AddMvc();
+            services.AddMvc()
+                .AddSessionStateTempDataProvider();
+            services.AddSession();
 
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
@@ -69,7 +71,7 @@ namespace Awards
             }
 
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseAuthentication();
 
             app.UseMvc(routes =>

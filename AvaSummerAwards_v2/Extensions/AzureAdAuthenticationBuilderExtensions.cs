@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Awards.Helpers;
 //using avainterviews.Repositories;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -9,6 +10,7 @@ using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Awards.Authentication
@@ -42,7 +44,11 @@ namespace Awards.Authentication
                 options.UseTokenLifetime = true;
                 options.CallbackPath = _azureOptions.CallbackPath;
                 options.RequireHttpsMetadata = false;
-                options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.ClientSecret = _azureOptions.ClientSecret;
+                //options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.Resource = "https://graph.microsoft.com"; // AAD graph
+
+                options.ResponseType = "id_token code";
 
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
@@ -86,8 +92,21 @@ namespace Awards.Authentication
                             context.Principal.AddIdentity(appIdentity);
                         }
                         return Task.CompletedTask;
+                    },
+                    OnAuthorizationCodeReceived = async ctx =>
+                    {
+                        var code = ctx.ProtocolMessage.Code;
+                        string userObjectId = (ctx.Principal.FindFirst("http://schemas.microsoft.com/identity/claims/objectidentifier"))?.Value;
+                        var authContext = new AuthenticationContext(ctx.Options.Authority, new NaiveSessionCache(userObjectId, ctx.HttpContext.Session));
+                        var credential = new ClientCredential(ctx.Options.ClientId, ctx.Options.ClientSecret);
+
+                        var authResult = await authContext.AcquireTokenByAuthorizationCodeAsync(ctx.TokenEndpointRequest.Code,
+                            new Uri(ctx.TokenEndpointRequest.RedirectUri, UriKind.RelativeOrAbsolute), credential, ctx.Options.Resource);
+
+                        // Notify the OIDC middleware that we already took care of code redemption.
+                        ctx.HandleCodeRedemption(authResult.AccessToken, ctx.ProtocolMessage.IdToken);
                     }
-                };
+                    };
             }
 
             public void Configure(OpenIdConnectOptions options)
