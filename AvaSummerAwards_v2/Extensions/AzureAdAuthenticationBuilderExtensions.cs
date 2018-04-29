@@ -80,7 +80,7 @@ namespace Awards.Authentication
                     OnTokenValidated = context =>
                     {
                         //TODO: this -really- shouldn't be hard coded but DI won't cooperate :(
-                        List<string> admins = new List<string>() {
+                        /*List<string> admins = new List<string>() {
                             "m.jarncrantz.ward@avanade.com"
                         };
                         string id = context.Principal.Identity.Name;
@@ -90,7 +90,7 @@ namespace Awards.Authentication
                             };
                             var appIdentity = new ClaimsIdentity(claims);
                             context.Principal.AddIdentity(appIdentity);
-                        }
+                        }*/
                         return Task.CompletedTask;
                     },
                     OnAuthorizationCodeReceived = async ctx =>

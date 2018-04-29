@@ -13,5 +13,14 @@ namespace Awards.Authentication
         public string TenantId { get; set; }
 
         public string CallbackPath { get; set; }
+
+        public string Authority
+        {
+            get
+            {
+                return $"{Instance}{TenantId}";
+            }
+        }
+        public static AzureAdOptions Settings { set; get; }
     }
 }
