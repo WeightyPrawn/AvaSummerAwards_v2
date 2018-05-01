@@ -1,4 +1,6 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
+using System.Threading.Tasks;
 using Awards.Repositories;
 using Awards.ViewModels;
 using Microsoft.AspNetCore.Authorization;
@@ -26,10 +28,18 @@ namespace Awards.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add([FromBody] NewNominationViewModel nomination)
+        public async Task<IActionResult> Add([FromBody] NewNominationViewModel nomination)
         {
-            _nominationRepository.Add(nomination, User.Identity.Name);
-            return Ok();
+            try
+            {
+                await _nominationRepository.Add(nomination, User, HttpContext.Session);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+            
         }
 
         [HttpDelete("{nominationId:int}")]

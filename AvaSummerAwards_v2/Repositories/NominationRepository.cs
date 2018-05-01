@@ -1,23 +1,30 @@
 ﻿using Awards.Helpers;
 using Awards.Models;
 using Awards.ViewModels;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace Awards.Repositories
 {
     public class NominationRepository
     {
         public AwardsContext _context { get; private set; }
+        public GraphRepository _graphRepository;
 
-        public NominationRepository(AwardsContext context)
+        public NominationRepository(AwardsContext context, GraphRepository graphRepository)
         {
             _context = context;
+            _graphRepository = graphRepository;
         }
 
-        public void Add(NewNominationViewModel nomination, string userName)
+        public async Task Add(NewNominationViewModel nomination, ClaimsPrincipal user, ISession session)
         {
+            var userName = user.Identity.Name;
             if(nomination.NominationId != null)
             {
                 Update(nomination, userName);
@@ -29,10 +36,7 @@ namespace Awards.Repositories
             {
                 if (existingNominee.Nominations.Any(o => o.Nominator == userName))
                 {
-                    /*var response = new HttpResponseMessage(HttpStatusCode.Forbidden);
-                    response.ReasonPhrase = "You have already nominated this person in this category";
-                    return ResponseMessage(response);*/
-                    return;
+                    throw new Exception($"You have already nominated {nomination.Email} in this category");
                 }
                 var newNomination = new Nomination
                 {
@@ -44,14 +48,7 @@ namespace Awards.Repositories
             }
             else
             {
-                var newNominee = new Nominee
-                {
-                    CategoryID = nomination.CategoryID,
-                    Email = nomination.Email,
-                    //Name = nominee.NomineeName, //Need to get from GraphAPI
-                    //Image = nominee.NoineeImage, //Need to get from GraphAPI
-                    Nominations = new List<Nomination>()
-                };
+                var newNominee = await _graphRepository.PopulateNominee(nomination, user, session);
                 newNominee.Nominations.Add(new Nomination
                 {
                     Nominator = userName,
@@ -69,27 +66,6 @@ namespace Awards.Repositories
             existingNomination.Reason = nomination.Reason;
             _context.Nominations.Update(existingNomination);
             _context.SaveChanges();
-
-            /*if (existingNomination != null)
-            {              
-                var currentNominee = _context.Nominees.Include("Nominations").Where(o => o.ID == existingNomination.NomineeID).FirstOrDefault();
-                //Check if nominee has changed
-                if (currentNominee.Email != nomination.Email)
-                {
-                    _context.Nominations.Remove(existingNomination);
-                    if (!currentNominee.Nominations.Any())
-                    {
-                        _context.Nominees.Remove(currentNominee);
-                    }
-                    _context.SaveChanges();
-                    Add(nomination, userName);
-                }
-                else
-                {
-                    existingNomination.Reason = nomination.Reason;
-                    existingNomination.
-                }
-            }*/
         }
 
         public void Delete(int id, string userName)
@@ -99,6 +75,12 @@ namespace Awards.Repositories
             {
                 _context.Nominations.Remove(nomination);
                 _context.SaveChanges();
+                var nominee = _context.Nominees.Include("Nominations").FirstOrDefault(s => s.ID == nomination.NomineeID);
+                if (!nominee.Nominations.Any())
+                {
+                    _context.Nominees.Remove(nominee);
+                    _context.SaveChanges();
+                }
             }
         }
 

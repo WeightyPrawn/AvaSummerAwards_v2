@@ -95,7 +95,7 @@ namespace Awards.Authentication
                     },
                     OnAuthorizationCodeReceived = async ctx =>
                     {
-                        var code = ctx.ProtocolMessage.Code;
+                        //var code = ctx.ProtocolMessage.Code;
                         string userObjectId = (ctx.Principal.FindFirst("http://schemas.microsoft.com/identity/claims/objectidentifier"))?.Value;
                         var authContext = new AuthenticationContext(ctx.Options.Authority, new NaiveSessionCache(userObjectId, ctx.HttpContext.Session));
                         var credential = new ClientCredential(ctx.Options.ClientId, ctx.Options.ClientSecret);

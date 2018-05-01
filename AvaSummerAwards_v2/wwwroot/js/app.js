@@ -37,22 +37,38 @@ angular.module('AvaSummerAwards', ['ngRoute'])
         $scope.removeVote = VoteService.removeVote;
 
     }]).controller('NominationController', ['NominationService', '$interval', '$scope', '$rootScope', function (NominationService, $interval, $scope, $rootScope) {
-            console.log($rootScope.userInfo)
-            $scope.data = NominationService.data;
+        console.log($rootScope.userInfo)
+        $scope.data = NominationService.data;
+        $scope.error = "";
+        $scope.add = function (nomination) {
+            $scope.error = "";
+            NominationService.add(nomination).then(function successCallback(response) {
+                // this callback will be called asynchronously
+                // when the response is available
+                NominationService.refreshData();
+                $('#myModal').modal('hide');
+            }, function errorCallback(response) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+                $scope.error = response.data;
+            });
+        }
+        $scope.delete = NominationService.delete;
 
-            $scope.add = NominationService.add;
-            $scope.delete = NominationService.delete;
-
+        $scope.editNomination = {};
+        $scope.openModal = function (data) {
+            if (data) {
+                $scope.editNomination.categoryID = data.categoryID;
+                $scope.editNomination.email = data.email;
+                $scope.editNomination.reason = data.nominations[0].reason;
+                $scope.editNomination.nominationId = data.nominations[0].id;
+            }
+            $('#myModal').modal('show')
+        };
+        $('#myModal').on('hide.bs.modal', function (e) {
             $scope.editNomination = {};
-            $scope.openModal = function (data) {
-                if (data) {
-                    $scope.editNomination.categoryID = data.categoryID;
-                    $scope.editNomination.email = data.email;
-                    $scope.editNomination.reason = data.nominations[0].reason;
-                    $scope.editNomination.nominationId = data.nominations[0].id;
-                }
-                $('#myModal').modal('show')
-            };
+            $scope.error = "";
+        })
 
     }]).controller('AdminController', ['VoteService', '$interval', '$scope', '$rootScope', function (VoteService, $interval, $scope, $rootScope) {
         console.log($rootScope.userInfo)
@@ -124,6 +140,7 @@ angular.module('AvaSummerAwards', ['ngRoute'])
     .factory('NominationService', ['$http', function ($http) {
         var apiBaseUrl = "";
         var data = {};
+        var error = "";
 
         var URLS = {
             NOMINATIONS: '/api/Nominations'
@@ -147,17 +164,8 @@ angular.module('AvaSummerAwards', ['ngRoute'])
             add: function (nomination) {
                 console.log(nomination);
 
-                $http.post(apiBaseUrl + URLS.NOMINATIONS, nomination)
-                    .then(function successCallback(response) {
-                        // this callback will be called asynchronously
-                        // when the response is available
-                        getData();
-                        $('#myModal').modal('hide');
-                        return response;
-                    }, function errorCallback(response) {
-                        // called asynchronously if an error occurs
-                        // or server returns response with an error status.
-                    });
+                return $http.post(apiBaseUrl + URLS.NOMINATIONS, nomination);
+                    
             },
             delete: function (nominationId) {
                 console.log(nominationId);
@@ -173,7 +181,7 @@ angular.module('AvaSummerAwards', ['ngRoute'])
                         // or server returns response with an error status.
                     });
             },
-
+            refreshData: function () { getData() },
             data: data
         }
     }])

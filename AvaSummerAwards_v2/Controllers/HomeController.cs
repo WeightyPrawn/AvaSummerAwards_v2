@@ -1,8 +1,5 @@
-﻿using System.Diagnostics;
-using System.Threading.Tasks;
-using Awards.Authentication;
+﻿using Awards.Authentication;
 using Awards.Helpers;
-using Awards.Repositories;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
@@ -15,15 +12,8 @@ namespace Awards.Controllers
     [Authorize]
     public class HomeController : Controller
     {
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            string userObjectID = (User.FindFirst("http://schemas.microsoft.com/identity/claims/objectidentifier"))?.Value;
-            //var sessioncache = new NaiveSessionCache(userObjectID, HttpContext.Session);
-            // Using ADAL.Net, get a bearer token to access the TodoListService
-            AuthenticationContext authContext = new AuthenticationContext(AzureAdOptions.Settings.Authority, new NaiveSessionCache(userObjectID, HttpContext.Session));
-            ClientCredential credential = new ClientCredential(AzureAdOptions.Settings.ClientId, AzureAdOptions.Settings.ClientSecret);
-            var result = await authContext.AcquireTokenSilentAsync("https://graph.microsoft.com", credential, new UserIdentifier(userObjectID, UserIdentifierType.UniqueId));
-
             return View();
         }
         [HttpGet]

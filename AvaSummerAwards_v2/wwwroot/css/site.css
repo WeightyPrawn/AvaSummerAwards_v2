@@ -160,3 +160,8 @@ button.btn-danger {
     width: 100%;
     text-align: center;
 }
+
+.error-message {
+    color: red;
+    text-align: left;
+}
