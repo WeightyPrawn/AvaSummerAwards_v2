@@ -1,0 +1,1129 @@
+[
+	{
+		"objectId": "bdf1c69c-1cfb-48bc-bd05-129b0ef26165",
+		"displayName": "Johan Samuelsson",
+		"givenName": "Johan",
+		"surname": "Samuelsson",
+		"userPrincipalName": "j.samuelsson@avanade.com"
+	},
+	{
+		"objectId": "9422e348-c6f5-47e2-83f9-8420924f472e",
+		"displayName": "Johan Nedin",
+		"givenName": "Johan",
+		"surname": "Nedin",
+		"userPrincipalName": "johan.nedin@avanade.com"
+	},
+	{
+		"objectId": "be17cf4b-b4bf-48b7-b11b-1bb4e7f90455",
+		"displayName": "Nils Sandell",
+		"givenName": "Nils",
+		"surname": "Sandell",
+		"userPrincipalName": "nils.sandell@avanade.com"
+	},
+	{
+		"objectId": "55a06f2a-dd6b-4f19-a223-35e3c132abc0",
+		"displayName": "Anders Blom",
+		"givenName": "Anders",
+		"surname": "Blom",
+		"userPrincipalName": "anders.blom@avanade.com"
+	},
+	{
+		"objectId": "cdc66fe2-e002-401e-9b52-f9e46b4b2797",
+		"displayName": "Magnus Dahlhjelm",
+		"givenName": "Magnus",
+		"surname": "Dahlhjelm",
+		"userPrincipalName": "magnus.dahlhjelm@avanade.com"
+	},
+	{
+		"objectId": "dc9708e7-d29d-4c4e-9510-dedb1068fde1",
+		"displayName": "Christian Lidholm",
+		"givenName": "Christian",
+		"surname": "Lidholm",
+		"userPrincipalName": "christian.lidholm@avanade.com"
+	},
+	{
+		"objectId": "0d896172-2417-4cdb-a9d8-e153536993ed",
+		"displayName": "Erik Strandler",
+		"givenName": "Erik",
+		"surname": "Strandler",
+		"userPrincipalName": "erik.strandler@avanade.com"
+	},
+	{
+		"objectId": "8ddeead6-cb11-4168-8cc9-6225f6443da5",
+		"displayName": "Staffan Olinger",
+		"givenName": "Staffan",
+		"surname": "Olinger",
+		"userPrincipalName": "staffan.olinger@avanade.com"
+	},
+	{
+		"objectId": "8d0a72cb-e7fa-4e5e-a4be-d75fad3df85d",
+		"displayName": "Erik Donnér",
+		"givenName": "Erik",
+		"surname": "Donner",
+		"userPrincipalName": "erik.donner@avanade.com"
+	},
+	{
+		"objectId": "021d2e1d-71dd-4f90-b75e-63eb01bb25de",
+		"displayName": "Malin Järncrantz Ward",
+		"givenName": "Malin",
+		"surname": "Jarncrantz Ward",
+		"userPrincipalName": "m.jarncrantz.ward@avanade.com"
+	},
+	{
+		"objectId": "35f127b4-8ff4-4cb7-850d-a136d7a0c6da",
+		"displayName": "Wictor Wilén",
+		"givenName": "Wictor",
+		"surname": "Wilen",
+		"userPrincipalName": "w.wilen@avanade.com"
+	},
+	{
+		"objectId": "a278d21c-6d98-4ffd-99cc-9654650fdba8",
+		"displayName": "Johan Ekblom",
+		"givenName": "Johan",
+		"surname": "Ekblom",
+		"userPrincipalName": "j.ekblom@avanade.com"
+	},
+	{
+		"objectId": "8835eda2-49c9-4c7c-9b18-862ff11aa069",
+		"displayName": "Julian Wild",
+		"givenName": "Julian",
+		"surname": "Wild",
+		"userPrincipalName": "julian.wild@avanade.com"
+	},
+	{
+		"objectId": "9b0874df-bb96-489d-818f-ed0318964ed2",
+		"displayName": "Joakim Björk",
+		"givenName": "Joakim",
+		"surname": "Bjork",
+		"userPrincipalName": "joakim.bjork@avanade.com"
+	},
+	{
+		"objectId": "7077f72c-fc6b-491b-a3c3-10fe5dd6eaee",
+		"displayName": "Patrik Löwendahl",
+		"givenName": "Patrik",
+		"surname": "Lowendahl",
+		"userPrincipalName": "patrik.lowendahl@avanade.com"
+	},
+	{
+		"objectId": "707c7d8e-4f0e-4ddd-ad91-6cc77140052e",
+		"displayName": "Carl Millert",
+		"givenName": "Carl",
+		"surname": "Millert",
+		"userPrincipalName": "carl.millert@avanade.com"
+	},
+	{
+		"objectId": "0ffbe8e2-8f14-4405-ba2a-202e688df7ff",
+		"displayName": "Micha Low",
+		"givenName": "Micha",
+		"surname": "Low",
+		"userPrincipalName": "micha.low@avanade.com"
+	},
+	{
+		"objectId": "ef7d55c4-76d9-42ec-b971-e2024467270f",
+		"displayName": "Åsa Arvidsson",
+		"givenName": "Asa",
+		"surname": "Arvidsson",
+		"userPrincipalName": "asa.arvidsson@avanade.com"
+	},
+	{
+		"objectId": "4532adf5-e19c-420b-a4c9-f54360bd47b7",
+		"displayName": "Beate Trollvik",
+		"givenName": "Beate",
+		"surname": "Trollvik",
+		"userPrincipalName": "beate.trollvik@avanade.com"
+	},
+	{
+		"objectId": "2deb9f45-c49d-4b9c-a4d9-28e5917cd87f",
+		"displayName": "Jesper Fajers",
+		"givenName": "Jesper",
+		"surname": "Fajers",
+		"userPrincipalName": "jesper.fajers@avanade.com"
+	},
+	{
+		"objectId": "7f3b7e81-0770-49c3-8358-7c51535596eb",
+		"displayName": "Amir Safa",
+		"givenName": "Amir",
+		"surname": "Safa",
+		"userPrincipalName": "amir.safa@avanade.com"
+	},
+	{
+		"objectId": "214c6dab-e26f-4fce-91cb-40a3acf735e3",
+		"displayName": "Martin Zainali",
+		"givenName": "Martin",
+		"surname": "Zainali",
+		"userPrincipalName": "martin.zainali@avanade.com"
+	},
+	{
+		"objectId": "119a7103-b82f-4d1c-bb5d-20b4716969c7",
+		"displayName": "Fredrik Tjeder",
+		"givenName": "Fredrik",
+		"surname": "Tjeder",
+		"userPrincipalName": "fredrik.tjeder@avanade.com"
+	},
+	{
+		"objectId": "21a0c91b-4feb-45ab-95f3-85c0aaba18aa",
+		"displayName": "Gustav Pettersson",
+		"givenName": "Gustav",
+		"surname": "Pettersson",
+		"userPrincipalName": "gustav.pettersson@avanade.com"
+	},
+	{
+		"objectId": "2ef9ed85-3a66-47e3-8d8e-536732be53b3",
+		"displayName": "Viktor Samuelsson",
+		"givenName": "Viktor",
+		"surname": "Samuelsson",
+		"userPrincipalName": "viktor.samuelsson@avanade.com"
+	},
+	{
+		"objectId": "f59becaf-b3d0-42d1-b529-b0a8d499d95f",
+		"displayName": "Amanda Sterner",
+		"givenName": "Amanda",
+		"surname": "Sterner",
+		"userPrincipalName": "amanda.sterner@avanade.com"
+	},
+	{
+		"objectId": "869c2193-0cc7-4fee-9bd9-9d872246b775",
+		"displayName": "Acacia Goransson",
+		"givenName": "Acacia",
+		"surname": "Goransson",
+		"userPrincipalName": "acacia.goransson@avanade.com"
+	},
+	{
+		"objectId": "99e0e224-d31a-41f4-9f5d-a96b85de98c3",
+		"displayName": "Tobias Eriksson",
+		"givenName": "Tobias",
+		"surname": "Eriksson",
+		"userPrincipalName": "t.eriksson@avanade.com"
+	},
+	{
+		"objectId": "035b203a-9778-4e32-a40c-d542caaa6c34",
+		"displayName": "Josef Feldt",
+		"givenName": "Josef",
+		"surname": "Feldt",
+		"userPrincipalName": "josef.feldt@avanade.com"
+	},
+	{
+		"objectId": "efa89abb-218b-4c8d-ab8f-bfdf8295492b",
+		"displayName": "Grigorios Asdranias",
+		"givenName": "Grigorios",
+		"surname": "Asdranias",
+		"userPrincipalName": "grigorios.asdranias@avanade.com"
+	},
+	{
+		"objectId": "c794ebaf-7e4f-44a0-88d0-7098cd92ff3c",
+		"displayName": "Jesper Ståhle",
+		"givenName": "Jesper",
+		"surname": "Stahle",
+		"userPrincipalName": "jesper.stahle@avanade.com"
+	},
+	{
+		"objectId": "400c3550-1897-407d-8918-92adf4e15917",
+		"displayName": "Linda Clarin",
+		"givenName": "Linda",
+		"surname": "Clarin",
+		"userPrincipalName": "linda.clarin@avanade.com"
+	},
+	{
+		"objectId": "925fc221-9c05-4f32-a5ac-977cd39b0acd",
+		"displayName": "Lubomir Kotzev",
+		"givenName": "Lubomir",
+		"surname": "Kotzev",
+		"userPrincipalName": "lubomir.kotzev@avanade.com"
+	},
+	{
+		"objectId": "44de1012-aa29-48f9-ac8d-3304145f4b17",
+		"displayName": "Johanna Sondell",
+		"givenName": "Johanna",
+		"surname": "Sondell",
+		"userPrincipalName": "johanna.sondell@avanade.com"
+	},
+	{
+		"objectId": "0bfe05d3-96f5-446c-8d20-467f2e8a5104",
+		"displayName": "Christer Finsen",
+		"givenName": "Christer",
+		"surname": "Finsen",
+		"userPrincipalName": "christer.finsen@avanade.com"
+	},
+	{
+		"objectId": "c2df63e4-c0d7-4a90-b954-9a26b9ade4f6",
+		"displayName": "Susanne Cederberg",
+		"givenName": "Susanne",
+		"surname": "Cederberg",
+		"userPrincipalName": "s.cederberg@avanade.com"
+	},
+	{
+		"objectId": "05575497-0082-4a82-a98a-f9b727b63519",
+		"displayName": "PerErik Nordman",
+		"givenName": "PerErik",
+		"surname": "Nordman",
+		"userPrincipalName": "pererik.nordman@avanade.com"
+	},
+	{
+		"objectId": "05399228-b7eb-40d0-86da-fe4803b5446e",
+		"displayName": "Per Strid",
+		"givenName": "Per",
+		"surname": "Strid",
+		"userPrincipalName": "per.strid@avanade.com"
+	},
+	{
+		"objectId": "7a7de845-9e36-419c-b3a2-17bce5f019e4",
+		"displayName": "Belinda Kusoffsky",
+		"givenName": "Belinda",
+		"surname": "Kusoffsky",
+		"userPrincipalName": "belinda.kusoffsky@avanade.com"
+	},
+	{
+		"objectId": "ce994c0c-b215-4a27-aec4-77958535b375",
+		"displayName": "Johan Ohrstedt",
+		"givenName": "Johan",
+		"surname": "Ohrstedt",
+		"userPrincipalName": "j.ohrstedt@avanade.com"
+	},
+	{
+		"objectId": "30f8864b-dff3-4929-bfd8-b94e47707fc6",
+		"displayName": "Kim Tuuliainen",
+		"givenName": "Kim",
+		"surname": "Tuuliainen",
+		"userPrincipalName": "kim.tuuliainen@avanade.com"
+	},
+	{
+		"objectId": "4b29cf37-3924-45d4-ad04-38d947690b6b",
+		"displayName": "Carlos Cederfeldt",
+		"givenName": "Carlos",
+		"surname": "Cederfeldt",
+		"userPrincipalName": "carlos.cederfeldt@avanade.com"
+	},
+	{
+		"objectId": "0c654296-2207-4e33-be4f-bfd2d29cab96",
+		"displayName": "Anders Ekfeldt",
+		"givenName": "Anders",
+		"surname": "Ekfeldt",
+		"userPrincipalName": "anders.ekfeldt@avanade.com"
+	},
+	{
+		"objectId": "7c979c08-cc3c-4999-b27d-7221dcdb7d4e",
+		"displayName": "Alexander Kaufmann",
+		"givenName": "Alexander",
+		"surname": "Kaufmann",
+		"userPrincipalName": "alexander.kaufmann@avanade.com"
+	},
+	{
+		"objectId": "6fbc2825-990f-4872-a025-f277442c5775",
+		"displayName": "Zozan Bozan",
+		"givenName": "Zozan",
+		"surname": "Bozan",
+		"userPrincipalName": "zozan.bozan@avanade.com"
+	},
+	{
+		"objectId": "8cfb68b7-d369-4e27-a121-162dbf646aa6",
+		"displayName": "Philip Jungstedt",
+		"givenName": "Philip",
+		"surname": "Jungstedt",
+		"userPrincipalName": "philip.jungstedt@avanade.com"
+	},
+	{
+		"objectId": "316582b0-e463-4bbf-8014-98dddb6da7ac",
+		"displayName": "Patrik Hegethorn",
+		"givenName": "Patrik",
+		"surname": "Hegethorn",
+		"userPrincipalName": "patrik.hegethorn@avanade.com"
+	},
+	{
+		"objectId": "b79d0176-9f62-4435-bed1-ff69382c4fe0",
+		"displayName": "Lukas De Ridder",
+		"givenName": "Lukas",
+		"surname": "De Ridder",
+		"userPrincipalName": "lukas.de.ridder@avanade.com"
+	},
+	{
+		"objectId": "a8894de0-f419-46e3-8ecb-3b0a2900fa9b",
+		"displayName": "Anders Risberg",
+		"givenName": "Anders",
+		"surname": "Risberg",
+		"userPrincipalName": "anders.risberg@avanade.com"
+	},
+	{
+		"objectId": "b24cd7f0-f153-4451-b100-e6251febcea3",
+		"displayName": "Rikard Bergqvist",
+		"givenName": "Rikard",
+		"surname": "Bergqvist",
+		"userPrincipalName": "rikard.bergqvist@avanade.com"
+	},
+	{
+		"objectId": "3af74697-01fd-442d-88b6-fa9b257da3f0",
+		"displayName": "Kristina Vernersson",
+		"givenName": "Kristina",
+		"surname": "Vernersson",
+		"userPrincipalName": "k.vernersson@avanade.com"
+	},
+	{
+		"objectId": "71ffc738-64de-48b8-810e-ac4457e6c752",
+		"displayName": "Carl Nyman",
+		"givenName": "Carl",
+		"surname": "Nyman",
+		"userPrincipalName": "carl.nyman@avanade.com"
+	},
+	{
+		"objectId": "582a6b7b-adbd-4d11-b248-461ce37dd680",
+		"displayName": "Marcus Engelhart",
+		"givenName": "Marcus",
+		"surname": "Engelhart",
+		"userPrincipalName": "marcus.engelhart@avanade.com"
+	},
+	{
+		"objectId": "2c38a02c-f24b-49ad-8020-b76feab3783e",
+		"displayName": "Marcus Ivarsson",
+		"givenName": "Marcus",
+		"surname": "Ivarsson",
+		"userPrincipalName": "marcus.ivarsson@avanade.com"
+	},
+	{
+		"objectId": "9b659dd2-89ea-4666-932c-91d412cccd6a",
+		"displayName": "Sebastian Näslund",
+		"givenName": "Sebastian",
+		"surname": "Naslund",
+		"userPrincipalName": "sebastian.naslund@avanade.com"
+	},
+	{
+		"objectId": "c31a33a4-ef60-42d4-8ea6-789df56d2192",
+		"displayName": "Anders Jobs",
+		"givenName": "Anders",
+		"surname": "Jobs",
+		"userPrincipalName": "anders.jobs@avanade.com"
+	},
+	{
+		"objectId": "afc90d42-3c8c-4855-8aca-e65f9bee9436",
+		"displayName": "Martin Furuskog",
+		"givenName": "Martin",
+		"surname": "Furuskog",
+		"userPrincipalName": "martin.furuskog@avanade.com"
+	},
+	{
+		"objectId": "c1acf130-8a38-490c-bc06-63a371a4d613",
+		"displayName": "Malin Wasing",
+		"givenName": "Malin",
+		"surname": "Wasing",
+		"userPrincipalName": "malin.wasing@avanade.com"
+	},
+	{
+		"objectId": "6296fab9-26c5-4998-9270-6e2b65eb3547",
+		"displayName": "Anton Gunnarsson",
+		"givenName": "Anton",
+		"surname": "Gunnarsson",
+		"userPrincipalName": "anton.gunnarsson@avanade.com"
+	},
+	{
+		"objectId": "ff82edae-14bc-4b36-b9cf-536de946d9b9",
+		"displayName": "Viktoria Lyngarth",
+		"givenName": "Viktoria",
+		"surname": "Lyngarth",
+		"userPrincipalName": "viktoria.lyngarth@avanade.com"
+	},
+	{
+		"objectId": "5fcbec57-1f08-4780-b8a0-53f1d6189a81",
+		"displayName": "Julia Lesse",
+		"givenName": "Julia",
+		"surname": "Lesse",
+		"userPrincipalName": "julia.lesse@avanade.com"
+	},
+	{
+		"objectId": "3b84949a-22e1-4ed9-a959-ca47b1c73f7e",
+		"displayName": "Emil Ställvik",
+		"givenName": "Emil",
+		"surname": "Stallvik",
+		"userPrincipalName": "emil.stallvik@avanade.com"
+	},
+	{
+		"objectId": "6ae75b89-673d-490f-8670-8e83e6b493d8",
+		"displayName": "Joe Eliasson",
+		"givenName": "Joe",
+		"surname": "Eliasson",
+		"userPrincipalName": "joe.eliasson@avanade.com"
+	},
+	{
+		"objectId": "24a94665-8a57-45cd-9534-784d9b11c475",
+		"displayName": "Richard Åkerström",
+		"givenName": "Richard",
+		"surname": "Akerstrom",
+		"userPrincipalName": "richard.akerstrom@avanade.com"
+	},
+	{
+		"objectId": "31be9ca3-666a-48b4-b8e3-e78502dcf3fe",
+		"displayName": "Peter Gustavsson",
+		"givenName": "Peter",
+		"surname": "Gustavsson",
+		"userPrincipalName": "peter.gustavsson@avanade.com"
+	},
+	{
+		"objectId": "51c72551-6eda-4681-98a4-80cbd1d849ae",
+		"displayName": "Claes Abrahamsson",
+		"givenName": "Claes",
+		"surname": "Abrahamsson",
+		"userPrincipalName": "claes.abrahamsson@avanade.com"
+	},
+	{
+		"objectId": "dbc9328f-05ea-4013-8d10-cbd4579ad7e5",
+		"displayName": "Viktor Volcko (c)",
+		"givenName": "Viktor",
+		"surname": "Volcko",
+		"userPrincipalName": "viktor.volcko@avanade.com"
+	},
+	{
+		"objectId": "39312dc7-377a-498a-ab4a-189cde93b2d1",
+		"displayName": "Sebastian Tannerby Halldorf",
+		"givenName": "Sebastian Tannerby",
+		"surname": "Halldorf",
+		"userPrincipalName": "sebastian.t.halldorf@avanade.com"
+	},
+	{
+		"objectId": "60e6c6c8-2a33-48e6-bf19-21d86620e09d",
+		"displayName": "Robin Liljeros",
+		"givenName": "Robin",
+		"surname": "Liljeros",
+		"userPrincipalName": "r.liljeros@avanade.com"
+	},
+	{
+		"objectId": "fc40eef6-646d-42cf-9050-32a1a8bc937a",
+		"displayName": "Pjär Dahlin",
+		"givenName": "Pjar",
+		"surname": "Dahlin",
+		"userPrincipalName": "pjar.dahlin@avanade.com"
+	},
+	{
+		"objectId": "5971c7d8-a1bc-49e2-adb5-435ce65f3c40",
+		"displayName": "Ina Bäckström",
+		"givenName": "Ina",
+		"surname": "Backstrom",
+		"userPrincipalName": "ina.backstrom@avanade.com"
+	},
+	{
+		"objectId": "0a7fadac-bccc-4780-97ca-3ad0172ae9dc",
+		"displayName": "Vinothbalaji Srinivasan",
+		"givenName": "Vinothbalaji",
+		"surname": "Srinivasan",
+		"userPrincipalName": "v.n.srinivasan@avanade.com"
+	},
+	{
+		"objectId": "32addcf1-7030-46ab-8a53-820b6ee0fd45",
+		"displayName": "Tobias Frenkel",
+		"givenName": "Tobias",
+		"surname": "Frenkel",
+		"userPrincipalName": "t.frenkel@avanade.com"
+	},
+	{
+		"objectId": "89526bce-9ee0-4390-a7ba-d3b99113150f",
+		"displayName": "Joakim Svensson",
+		"givenName": "Joakim",
+		"surname": "Svensson",
+		"userPrincipalName": "joakim.svensson@avanade.com"
+	},
+	{
+		"objectId": "0c1d1bb4-5400-4be2-8df7-25811ba36361",
+		"displayName": "Erik Arkstedt",
+		"givenName": "Erik",
+		"surname": "Arkstedt",
+		"userPrincipalName": "erik.arkstedt@avanade.com"
+	},
+	{
+		"objectId": "1e4d886b-4ac2-4902-b615-889c0af8ded9",
+		"displayName": "Cecilia Hansryd (c)",
+		"givenName": "Cecilia",
+		"surname": "Hansryd",
+		"userPrincipalName": "c.hansryd@avanade.com"
+	},
+	{
+		"objectId": "03ee7bf1-e838-4a7f-84cf-467b2ed87178",
+		"displayName": "Gita Balcere (c)",
+		"givenName": "Gita",
+		"surname": "Balcere",
+		"userPrincipalName": "gita.balcere@avanade.com"
+	},
+	{
+		"objectId": "a0024522-9c40-4a4f-a8dd-3fb781b0e269",
+		"displayName": "Tomas Kokes (c)",
+		"givenName": "Tomas",
+		"surname": "Kokes",
+		"userPrincipalName": "t.kokes@avanade.com"
+	},
+	{
+		"objectId": "3d8d8c78-c6fc-4cb6-9431-7cfb9088bbab",
+		"displayName": "Miroslav Jalsovsky (c)",
+		"givenName": "Miroslav",
+		"surname": "Jalsovsky",
+		"userPrincipalName": "miroslav.jalsovsky@avanade.com"
+	},
+	{
+		"objectId": "515adef5-dd83-4845-bd16-8f0521da3ee3",
+		"displayName": "Oskar Hallbom (c)",
+		"givenName": "Oskar",
+		"surname": "Hallbom",
+		"userPrincipalName": "oskar.hallbom@avanade.com"
+	},
+	{
+		"objectId": "027484c6-1dd3-4627-8537-b68f3deffac9",
+		"displayName": "Nataly Angelovska (c)",
+		"givenName": "Nataly",
+		"surname": "Angelovska",
+		"userPrincipalName": "nataly.angelovska@avanade.com"
+	},
+	{
+		"objectId": "a2e053c4-b796-4476-a1ca-6e57e9313517",
+		"displayName": "Alda Zeila (c)",
+		"givenName": "Alda",
+		"surname": "Zeila",
+		"userPrincipalName": "alda.zeila@avanade.com"
+	},
+	{
+		"objectId": "9d43bada-0135-4585-bb15-138a0d0b4efb",
+		"displayName": "Max Smith",
+		"givenName": "Max",
+		"surname": "Smith",
+		"userPrincipalName": "max.smith@avanade.com"
+	},
+	{
+		"objectId": "07cbe439-970d-4aad-9326-16a49115cb7f",
+		"displayName": "Henrik Rehnmark",
+		"givenName": "Henrik",
+		"surname": "Rehnmark",
+		"userPrincipalName": "henrik.rehnmark@avanade.com"
+	},
+	{
+		"objectId": "7b01159c-64d9-4e4a-9d66-d2ca3bf96d9b",
+		"displayName": "Christoffer Svensson",
+		"givenName": "Christoffer",
+		"surname": "Svensson",
+		"userPrincipalName": "christoffer.svensson@avanade.com"
+	},
+	{
+		"objectId": "24bd6a40-4ce0-4035-a24f-33d94b66b4d9",
+		"displayName": "Alexander Vik",
+		"givenName": "Alexander",
+		"surname": "Vik",
+		"userPrincipalName": "alexander.vik@avanade.com"
+	},
+	{
+		"objectId": "9e9990bb-580b-4b82-a2db-ed9402ec539a",
+		"displayName": "Henrik Jalaliamin",
+		"givenName": "Henrik",
+		"surname": "Jalaliamin",
+		"userPrincipalName": "henrik.jalaliamin@avanade.com"
+	},
+	{
+		"objectId": "5c84b6d4-e817-4716-a550-984237f79763",
+		"displayName": "Henrik Gustring",
+		"givenName": "Henrik",
+		"surname": "Gustring",
+		"userPrincipalName": "henrik.gustring@avanade.com"
+	},
+	{
+		"objectId": "becd2f29-6002-4132-ab5d-e148d157d95b",
+		"displayName": "Selma Besic",
+		"givenName": "Selma",
+		"surname": "Besic",
+		"userPrincipalName": "selma.besic@avanade.com"
+	},
+	{
+		"objectId": "379b05ec-13f9-4fbb-bd39-67617c522326",
+		"displayName": "Daniel Öberg",
+		"givenName": "Daniel",
+		"surname": "Oberg",
+		"userPrincipalName": "daniel.oberg@avanade.com"
+	},
+	{
+		"objectId": "588b8645-8311-4d61-adf7-f2d5854c13dc",
+		"displayName": "Cecilia A. Hansryd",
+		"givenName": "Cecilia",
+		"surname": "Hansryd",
+		"userPrincipalName": "cecilia.a.hansryd@avanade.com"
+	},
+	{
+		"objectId": "89ce8e6b-c73f-4454-bb85-0cfdf4892681",
+		"displayName": "Azeem Akhtar",
+		"givenName": "Azeem",
+		"surname": "Akhtar",
+		"userPrincipalName": "azeem.akhtar@avanade.com"
+	},
+	{
+		"objectId": "47e7774a-714b-4102-aa63-3cc24ed0299a",
+		"displayName": "Sebastian Andersson",
+		"givenName": "Sebastian",
+		"surname": "Andersson",
+		"userPrincipalName": "sebastian.andersson@avanade.com"
+	},
+	{
+		"objectId": "cc24ae8b-de0a-4429-bb1c-724d6a825522",
+		"displayName": "Annie Wernberg",
+		"givenName": "Annie",
+		"surname": "Wernberg",
+		"userPrincipalName": "annie.wernberg@avanade.com"
+	},
+	{
+		"objectId": "e596df24-1618-4497-bf06-2d15717472dc",
+		"displayName": "Johan Regnström",
+		"givenName": "Johan",
+		"surname": "Regnstrom",
+		"userPrincipalName": "johan.regnstrom@avanade.com"
+	},
+	{
+		"objectId": "39695492-8769-4412-82d5-9611b3d30ab5",
+		"displayName": "Anders Jansson (c)",
+		"givenName": "Anders",
+		"surname": "Jansson",
+		"userPrincipalName": "anders.jansson@avanade.com"
+	},
+	{
+		"objectId": "adae9441-1490-485d-8db3-045087b6f320",
+		"displayName": "Ajit Kumar Guttula",
+		"givenName": "Ajit Kumar",
+		"surname": "Guttula",
+		"userPrincipalName": "ajit.kumar.guttula@avanade.com"
+	},
+	{
+		"objectId": "cc7dc04d-833e-461c-aee1-161b6a991009",
+		"displayName": "N. Lalin (c)",
+		"givenName": "Nenad",
+		"surname": "Lalin",
+		"userPrincipalName": "nenad.lalin@avanade.com"
+	},
+	{
+		"objectId": "53000737-29a9-41ef-91b8-c9301def63da",
+		"displayName": "Tobias Forsnacke",
+		"givenName": "Tobias",
+		"surname": "Forsnacke",
+		"userPrincipalName": "tobias.forsnacke@avanade.com"
+	},
+	{
+		"objectId": "cd5e02cc-c81c-417e-a60a-418f586ac926",
+		"displayName": "J. Ohlin (c)",
+		"givenName": "Jorgen",
+		"surname": "Ohlin",
+		"userPrincipalName": "j.ohlin@avanade.com"
+	},
+	{
+		"objectId": "b4e8fa1d-4b50-4e02-92d3-c3b606c2a3e8",
+		"displayName": "Charlotte Akej (c)",
+		"givenName": "Charlotte",
+		"surname": "Akej",
+		"userPrincipalName": "charlotte.akej@avanade.com"
+	},
+	{
+		"objectId": "0a945a62-d2af-4b2c-9be9-edaaf2484994",
+		"displayName": "Malin Windrup",
+		"givenName": "Malin",
+		"surname": "Windrup",
+		"userPrincipalName": "malin.windrup@avanade.com"
+	},
+	{
+		"objectId": "a72f455a-ce8a-46b7-a5b9-f69cd0390752",
+		"displayName": "Jawad Amouri",
+		"givenName": "Jawad",
+		"surname": "Amouri",
+		"userPrincipalName": "jawad.amouri@avanade.com"
+	},
+	{
+		"objectId": "f81505fd-7ce5-4211-8e9b-601d1f9ea109",
+		"displayName": "Sandra Adolfsson",
+		"givenName": "Sandra",
+		"surname": "Adolfsson",
+		"userPrincipalName": "sandra.adolfsson@avanade.com"
+	},
+	{
+		"objectId": "fb357ae4-b777-4536-a048-2a6847cbcf80",
+		"displayName": "Sofia Siljeholm",
+		"givenName": "Sofia",
+		"surname": "Siljeholm",
+		"userPrincipalName": "sofia.siljeholm@avanade.com"
+	},
+	{
+		"objectId": "3c2b06eb-edc1-4725-9718-278a402e285e",
+		"displayName": "Jesper Jonsson",
+		"givenName": "Jesper",
+		"surname": "Jonsson",
+		"userPrincipalName": "jesper.jonsson@avanade.com"
+	},
+	{
+		"objectId": "a749e312-47ed-45a1-8221-711cbfc1d788",
+		"displayName": "Frida Torstensson",
+		"givenName": "Frida",
+		"surname": "Torstensson",
+		"userPrincipalName": "frida.torstensson@avanade.com"
+	},
+	{
+		"objectId": "9575b3e5-7b07-442e-833f-40baf5003fea",
+		"displayName": "Max Bauhn",
+		"givenName": "Max",
+		"surname": "Bauhn",
+		"userPrincipalName": "max.bauhn@avanade.com"
+	},
+	{
+		"objectId": "8b9df06f-c9b9-48f0-8f5e-7533afdbe4e2",
+		"displayName": "Negar Nadi",
+		"givenName": "Negar",
+		"surname": "Nadi",
+		"userPrincipalName": "negar.nadi@avanade.com"
+	},
+	{
+		"objectId": "3f9eca14-5ef4-427e-8843-00f2940b7d4d",
+		"displayName": "Viktor Lindstedt",
+		"givenName": "Viktor",
+		"surname": "Lindstedt",
+		"userPrincipalName": "viktor.lindstedt@avanade.com"
+	},
+	{
+		"objectId": "f3c7dc85-f350-49c3-857e-e298e2112b2d",
+		"displayName": "Johan Forsberg",
+		"givenName": "Johan",
+		"surname": "Forsberg",
+		"userPrincipalName": "johan.forsberg@avanade.com"
+	},
+	{
+		"objectId": "38507bd1-1d46-499b-9af6-42746df29d69",
+		"displayName": "Anton Elgh",
+		"givenName": "Anton",
+		"surname": "Elgh",
+		"userPrincipalName": "anton.elgh@avanade.com"
+	},
+	{
+		"objectId": "75aecd5c-1faa-4101-9954-6a1202f6d57d",
+		"displayName": "Mattias Folke",
+		"givenName": "Mattias",
+		"surname": "Folke",
+		"userPrincipalName": "mattias.folke@avanade.com"
+	},
+	{
+		"objectId": "39cb0325-9ffa-4bf1-b141-86815d3bd7ce",
+		"displayName": "Narendra B. Sharma",
+		"givenName": "Narendra",
+		"surname": "Sharma",
+		"userPrincipalName": "narendra.b.sharma@avanade.com"
+	},
+	{
+		"objectId": "08778b16-4523-4069-b3ad-bc807d67ff1f",
+		"displayName": "Kalle Eneroth (c)",
+		"givenName": "Kalle",
+		"surname": "Eneroth",
+		"userPrincipalName": "kalle.eneroth@avanade.com"
+	},
+	{
+		"objectId": "9a7a06c7-5d7b-4a55-aafe-b9078bcd5094",
+		"displayName": "Markus Andersson",
+		"givenName": "Markus",
+		"surname": "Andersson",
+		"userPrincipalName": "markus.andersson@avanade.com"
+	},
+	{
+		"objectId": "dfbd331c-0e0a-4fa0-9cb6-7e4dcb3c87de",
+		"displayName": "Natalie Nybert (c)",
+		"givenName": "Natalie",
+		"surname": "Nybert",
+		"userPrincipalName": "natalie.nybert@avanade.com"
+	},
+	{
+		"objectId": "98913fc3-0086-4a60-afba-edf938a0845e",
+		"displayName": "Carolina Andersson (c)",
+		"givenName": "Carolina",
+		"surname": "Andersson",
+		"userPrincipalName": "carolina.andersson@avanade.com"
+	},
+	{
+		"objectId": "158e25e5-e41a-412c-9f1e-67446e28c91b",
+		"displayName": "Jonas Johnsson (c)",
+		"givenName": "Jonas",
+		"surname": "Johnsson",
+		"userPrincipalName": "jonas.johnsson@avanade.com"
+	},
+	{
+		"objectId": "409b3419-4892-4be6-89c3-2120761ff0b9",
+		"displayName": "Inger Bohlin",
+		"givenName": "Inger",
+		"surname": "Bohlin",
+		"userPrincipalName": "inger.bohlin@avanade.com"
+	},
+	{
+		"objectId": "6e3f3538-0275-4ba5-89ef-4272007774c2",
+		"displayName": "Daniel A. Silva",
+		"givenName": "Daniel",
+		"surname": "Silva",
+		"userPrincipalName": "daniel.a.silva@avanade.com"
+	},
+	{
+		"objectId": "66917537-d47c-4e9d-a85a-9a572eb9e5e6",
+		"displayName": "H. Arsiwala",
+		"givenName": "Huzefa",
+		"surname": "Arsiwala",
+		"userPrincipalName": "h.arsiwala@avanade.com"
+	},
+	{
+		"objectId": "013a17a9-0b8e-45a6-aa4a-3908d306ed69",
+		"displayName": "V. Wigelius (c)",
+		"givenName": "Victor",
+		"surname": "Wigelius",
+		"userPrincipalName": "v.wigelius@avanade.com"
+	},
+	{
+		"objectId": "9adb2bc4-a406-4f91-8781-8fb3a365961c",
+		"displayName": "Irina Radu",
+		"givenName": "Irina",
+		"surname": "Radu",
+		"userPrincipalName": "irina.radu@avanade.com"
+	},
+	{
+		"objectId": "fac8a5b9-f5a2-4b2b-a954-0c971aeeeddc",
+		"displayName": "Rafael Vega (c)",
+		"givenName": "Rafael",
+		"surname": "Vega",
+		"userPrincipalName": "rafael.vega@avanade.com"
+	},
+	{
+		"objectId": "9610b974-3541-41e6-a4a5-4bf16f0d4e57",
+		"displayName": "Jesper Sandsjö",
+		"givenName": "Jesper",
+		"surname": "Sandsjo",
+		"userPrincipalName": "jesper.sandsjo@avanade.com"
+	},
+	{
+		"objectId": "d9cbc085-0363-4702-97c0-7191cfc0afa6",
+		"displayName": "Fredrik Bohman (c)",
+		"givenName": "Fredrik",
+		"surname": "Bohman",
+		"userPrincipalName": "fredrik.bohman@avanade.com"
+	},
+	{
+		"objectId": "ee9b9f9e-4572-47ca-b189-2302e62e5ef5",
+		"displayName": "Johan Sjöberg",
+		"givenName": "Johan",
+		"surname": "Sjoberg",
+		"userPrincipalName": "johan.sjoberg@avanade.com"
+	},
+	{
+		"objectId": "3b83fcd1-72f3-44bd-ba1d-a07af7b84b2f",
+		"displayName": "Rahel Tekie Abraham",
+		"givenName": "Rahel",
+		"surname": "Tekie Abraham",
+		"userPrincipalName": "rahel.tekie.abraham@avanade.com"
+	},
+	{
+		"objectId": "ffc29d6d-6f81-47e1-9fc8-f55f397031c8",
+		"displayName": "Sarah Stilwell",
+		"givenName": "Sarah",
+		"surname": "Stilwell",
+		"userPrincipalName": "sarah.stilwell@avanade.com"
+	},
+	{
+		"objectId": "7772709a-4e0d-4da1-b577-cd523097cd6a",
+		"displayName": "Sebastian Nylén",
+		"givenName": "Sebastian",
+		"surname": "Nylen",
+		"userPrincipalName": "sebastian.nylen@avanade.com"
+	},
+	{
+		"objectId": "97126e87-a487-4937-9ef3-37a9a4baa8c1",
+		"displayName": "Goran Halvarsson (c)",
+		"givenName": "Goran",
+		"surname": "Halvarsson",
+		"userPrincipalName": "goran.halvarsson@avanade.com"
+	},
+	{
+		"objectId": "b2b68779-9489-4a84-9e44-d139f70c925f",
+		"displayName": "Daniele Östholm",
+		"givenName": "Daniele",
+		"surname": "Ostholm",
+		"userPrincipalName": "daniele.ostholm@avanade.com"
+	},
+	{
+		"objectId": "5f282af2-95e0-4a94-b225-aae0547d22ea",
+		"displayName": "Niklas Pedersen (c)",
+		"givenName": "Niklas",
+		"surname": "Pedersen",
+		"userPrincipalName": "niklas.pedersen@avanade.com"
+	},
+	{
+		"objectId": "936ec15f-c903-412c-8da4-1c30b433a736",
+		"displayName": "Sandra Lindblad",
+		"givenName": "Sandra",
+		"surname": "Lindblad",
+		"userPrincipalName": "sandra.lindblad@avanade.com"
+	},
+	{
+		"objectId": "a92c0816-770a-4283-abc9-20af37b94c60",
+		"displayName": "Saswat K. Swain",
+		"givenName": "Saswat Kumar",
+		"surname": "Swain",
+		"userPrincipalName": "saswat.k.swain@avanade.com"
+	},
+	{
+		"objectId": "2d2d9fdd-187e-4fce-b967-f30a8a5032d3",
+		"displayName": "Malin Brorell (c)",
+		"givenName": "Malin",
+		"surname": "Brorell",
+		"userPrincipalName": "malin.brorell@avanade.com"
+	},
+	{
+		"objectId": "3e7c628b-f1a9-46ca-9487-433b2f86a774",
+		"displayName": "Emma Humble (c)",
+		"givenName": "Emma",
+		"surname": "Humble",
+		"userPrincipalName": "emma.humble@avanade.com"
+	},
+	{
+		"objectId": "662eadc2-604a-4f03-8a96-01f651a683d8",
+		"displayName": "Daniel Arvidsson",
+		"givenName": "Daniel",
+		"surname": "Arvidsson",
+		"userPrincipalName": "daniel.arvidsson@avanade.com"
+	},
+	{
+		"objectId": "e617952d-7fe9-4fd0-82e1-2eae232de4e1",
+		"displayName": "C. von Sabsay",
+		"givenName": "Christoffer",
+		"surname": "von Sabsay",
+		"userPrincipalName": "c.von.sabsay@avanade.com"
+	},
+	{
+		"objectId": "1a7f01b2-952a-4f35-9e6d-6405c8b9cabb",
+		"displayName": "Rickard Högström (c)",
+		"givenName": "Rickard",
+		"surname": "Hogstrom",
+		"userPrincipalName": "rickard.hogstrom@avanade.com"
+	},
+	{
+		"objectId": "2f90664c-4e5a-463a-939f-13c61885bddf",
+		"displayName": "Svea Påhlsson",
+		"givenName": "Svea",
+		"surname": "Pahlsson",
+		"userPrincipalName": "svea.pahlsson@avanade.com"
+	},
+	{
+		"objectId": "1db475bb-cbde-400b-a19b-a39dcbff19e5",
+		"displayName": "Johannes Stensfelt",
+		"givenName": "Johannes",
+		"surname": "Stensfelt",
+		"userPrincipalName": "johannes.stensfelt@avanade.com"
+	},
+	{
+		"objectId": "ec630b39-e179-4c28-83ad-85be7efaff4b",
+		"displayName": "Sofie Mähler",
+		"givenName": "Sofie",
+		"surname": "Mahler",
+		"userPrincipalName": "sofie.mahler@avanade.com"
+	},
+	{
+		"objectId": "852c95ac-ec98-40df-aeee-d3a0003cfb8e",
+		"displayName": "Felicia Möller",
+		"givenName": "Felicia",
+		"surname": "Moller",
+		"userPrincipalName": "felicia.moller@avanade.com"
+	},
+	{
+		"objectId": "c020f1cf-c8da-4696-9128-b91684649e09",
+		"displayName": "Linnea Norrman",
+		"givenName": "Linnea",
+		"surname": "Norrman",
+		"userPrincipalName": "linnea.norrman@avanade.com"
+	},
+	{
+		"objectId": "7a30dc9a-0c96-4846-90ae-9bc542df8318",
+		"displayName": "Andrea Celing",
+		"givenName": "Andrea",
+		"surname": "Celing",
+		"userPrincipalName": "andrea.celing@avanade.com"
+	},
+	{
+		"objectId": "aee82b7e-98e6-4004-bd66-f8c5d16d3304",
+		"displayName": "Carl Dalén",
+		"givenName": "Carl",
+		"surname": "Dalen",
+		"userPrincipalName": "carl.dalen@avanade.com"
+	},
+	{
+		"objectId": "4854aa1d-5560-476c-9f2c-6d5b73e298d9",
+		"displayName": "Gustav Jonasson",
+		"givenName": "Gustav",
+		"surname": "Jonasson",
+		"userPrincipalName": "gustav.jonasson@avanade.com"
+	},
+	{
+		"objectId": "de33623b-23d1-4cae-aec9-61ad68a19798",
+		"displayName": "Alberto Catalán",
+		"givenName": "Alberto",
+		"surname": "Catalan",
+		"userPrincipalName": "alberto.catalan@avanade.com"
+	},
+	{
+		"objectId": "8f8e3bbf-ec8d-4682-8418-29e2ac83b35f",
+		"displayName": "Astrid Billman",
+		"givenName": "Astrid",
+		"surname": "Billman",
+		"userPrincipalName": "astrid.billman@avanade.com"
+	},
+	{
+		"objectId": "6928b167-e017-415b-a8ba-ccb63937050d",
+		"displayName": "Ebba Abrahamsson",
+		"givenName": "Ebba",
+		"surname": "Abrahamsson",
+		"userPrincipalName": "ebba.abrahamsson@avanade.com"
+	},
+	{
+		"objectId": "56f16d86-5aa8-4ce7-949d-02539b5da266",
+		"displayName": "Malin Johansson",
+		"givenName": "Malin",
+		"surname": "Johansson",
+		"userPrincipalName": "malin.johansson@avanade.com"
+	},
+	{
+		"objectId": "7c97dda1-e682-4f89-bd29-fbd0a34ea1d6",
+		"displayName": "David Hansson",
+		"givenName": "David",
+		"surname": "Hansson",
+		"userPrincipalName": "david.hansson@avanade.com"
+	},
+	{
+		"objectId": "dd30379e-9ccd-4a5a-ae4d-c1378183ea8c",
+		"displayName": "Karin Lind",
+		"givenName": "Karin",
+		"surname": "Lind",
+		"userPrincipalName": "karin.lind@avanade.com"
+	},
+	{
+		"objectId": "24c82b5b-659b-43d4-a6bb-f907779da04a",
+		"displayName": "Peyman Shahrestani",
+		"givenName": "Peyman",
+		"surname": "Shahrestani",
+		"userPrincipalName": "peyman.shahrestani@avanade.com"
+	},
+	{
+		"objectId": "81a32c56-4a56-41f5-bc69-a6ea9089c7b4",
+		"displayName": "Charlotte Ørsted",
+		"givenName": "Charlotte",
+		"surname": "Orsted",
+		"userPrincipalName": "charlotte.orsted@avanade.com"
+	},
+	{
+		"objectId": "536b6c22-a9c4-4155-b44f-ccfb5f97c2eb",
+		"displayName": "Per Sundin",
+		"givenName": "Per",
+		"surname": "Sundin",
+		"userPrincipalName": "per.sundin@avanade.com"
+	},
+	{
+		"objectId": "a43b0bc0-6a29-402e-b3b0-c68c4834c2b3",
+		"displayName": "V. A. Tripathi",
+		"givenName": "Vineet",
+		"surname": "Tripathi",
+		"userPrincipalName": "v.a.tripathi@avanade.com"
+	},
+	{
+		"objectId": "38c67079-0528-4806-87d6-b73e523763b9",
+		"displayName": "R. Högström",
+		"givenName": "Rickard",
+		"surname": "Hogstrom",
+		"userPrincipalName": "r.hogstrom@avanade.com"
+	},
+	{
+		"objectId": "042da570-e161-4db3-9815-ee867a9554f4",
+		"displayName": "Samuel Nordberg",
+		"givenName": "Samuel",
+		"surname": "Nordberg",
+		"userPrincipalName": "samuel.nordberg@avanade.com"
+	}
+]

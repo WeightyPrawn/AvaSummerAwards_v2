@@ -60,15 +60,56 @@ angular.module('AvaSummerAwards', ['ngRoute'])
             if (data) {
                 $scope.editNomination.categoryID = data.categoryID;
                 $scope.editNomination.email = data.email;
+                $scope.editNomination.displayName = data.name;
                 $scope.editNomination.reason = data.nominations[0].reason;
                 $scope.editNomination.nominationId = data.nominations[0].id;
+                $('#email').typeahead('val', $scope.editNomination.displayName);
+                $('#email').prop('disabled', true);
+            } else {
+                $('#email').prop('disabled', false);
             }
             $('#myModal').modal('show')
         };
         $('#myModal').on('hide.bs.modal', function (e) {
             $scope.editNomination = {};
+            $('#email').typeahead('val', '');
             $scope.error = "";
         })
+        
+        var users = new Bloodhound({
+            datumTokenizer: Bloodhound.tokenizers.obj.whitespace('displayName', 'userPrincipalName'),
+            queryTokenizer: Bloodhound.tokenizers.whitespace,
+            prefetch: '/data/users.json'
+        });
+
+        $('#email').typeahead({
+            highlight: true
+        },
+            {
+                name: 'nba-teams',
+                display: 'displayName',
+                source: users,
+                templates: {
+                    empty: [
+                        '<div class="empty-message">',
+                        'unable to find any user with that name',
+                        '</div>'
+                    ].join('\n'),
+                    suggestion: Handlebars.compile('<div><strong>{{displayName}}</strong><p>{{userPrincipalName}}</p></div>')
+                }
+            }).focus(function () {
+                $scope.editNomination.email = '';
+                $scope.editNomination.displayName = '';
+            }).on('typeahead:selected', function (a, b, c) {
+                console.log(b);
+                $scope.editNomination.email = b.userPrincipalName;
+                $scope.editNomination.displayName = b.displayName;
+                $('#reason').focus();
+            }).blur(function () {
+                if ($scope.editNomination.email == '') {
+                    $(this).typeahead('val', '');
+                }
+            });
 
     }]).controller('AdminController', ['VoteService', '$interval', '$scope', '$rootScope', function (VoteService, $interval, $scope, $rootScope) {
         console.log($rootScope.userInfo)
@@ -165,7 +206,7 @@ angular.module('AvaSummerAwards', ['ngRoute'])
                 console.log(nomination);
 
                 return $http.post(apiBaseUrl + URLS.NOMINATIONS, nomination);
-                    
+
             },
             delete: function (nominationId) {
                 console.log(nominationId);

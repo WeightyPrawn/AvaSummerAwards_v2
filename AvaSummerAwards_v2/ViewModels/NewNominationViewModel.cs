@@ -9,6 +9,7 @@ namespace Awards.ViewModels
     {
         public int? NominationId { get; set; }
         public int CategoryID { get; set; }
+        public string Name { get; set; }
         public string Email { get; set; }
         public string Reason { get; set; }
     }
