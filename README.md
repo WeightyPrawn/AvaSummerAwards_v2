@@ -3,7 +3,7 @@ The extension includes two release tasks that can be found under the Deploy sect
 
 ***[COOP API Management - Deploy API](#coop-api-management---deploy-api)***
 
-***[COOP API Management - Release Latest Revision](coop-api-management---release-latest-revision)***
+***[COOP API Management - Release Latest Revision](#coop-api-management---release-latest-revision)***
 
 ## COOP API Management - Deploy API
 This task is used to create or update a versioned API in APIM. Including any policies and/or named values needed. It's also possible to have the task create a new revision instead of overwriting the current one.
